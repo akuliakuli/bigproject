@@ -33,11 +33,14 @@ header{
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-
+    cursor: pointer;
     color: #6E6E73;
 
 }
-
+.header_top_menu_item:hover{
+    text-decoration-line: underline;
+    text-decoration-color: #333333;
+}
 .header_low_menu{
     display: flex;
     gap: 18px;
@@ -63,6 +66,11 @@ header{
     text-transform: uppercase;
     max-width: fit-content;
     color: #1D1D1F;
+    cursor: pointer;
+}
+.header_low_menu_item:hover{
+    text-decoration-line: underline;
+    text-decoration-color: #6E6E73;
 }
 .dot{
     font-family: 'Ubuntu';
@@ -72,6 +80,8 @@ header{
     line-height: 18px;
     align-self: center;
     color: #C4C4C4;
+    cursor:default;
+    text-decoration: none;
 }
 .header_low_search{
     display: flex;
@@ -113,6 +123,10 @@ header{
     margin-left: 1em;
     display: flex;
     gap: .5em;
+}
+.header_low_img:hover{
+    width: 99px;
+    height: 99px;
 }
 .header_slider_container{
     display: flex;
@@ -461,10 +475,12 @@ main{
     box-sizing: border-box;
 }
 .main_reviews_container{
+
     display: flex;
     flex-direction: column;
     background: #E5E5E5;
     min-height: 600px;
+    border: 1px solid #E5E5E5;
 }
 
 .reviews_container{
@@ -525,4 +541,189 @@ main{
     color: #1D1D1F;
 
 
+}
+.main_products_title{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+
+    /* identical to box height, or 58px */
+
+    color: #1D1D1F;
+
+
+}
+.main_products_container{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #E5E5E5;
+    margin-bottom: 5em;
+}
+.main_product_name{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 120%;
+
+    /* identical to box height, or 22px */
+
+    color: #1D1D1F;
+
+
+}
+.main_product_price{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+
+    /* identical to box height, or 36px */
+
+    color: #1D1D1F;
+}
+.main_product{
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(0px 16px 24px rgba(0, 0, 0, 0.06)) drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.04)) drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.04));
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    align-items: center;
+}
+.main_products{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.main_product_img{
+    width: 342px;
+    height: 394px;
+}
+.main_page_add_container{
+    background: #1D1D1F;
+    min-height: 517px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_page_text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main_page_text_title{
+    font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 120%;
+
+/* identical to box height, or 58px */
+
+color: #FFFFFF;
+
+
+}
+.main_page_text_subtittle{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+
+    color: #F5F5F7;
+}
+.main_page_text_descr{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    max-width: 690px;
+    color: #6E6E73;
+
+
+}
+.main_page_images{
+    max-width: 650px;
+}
+.main_page_button{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+
+    /* identical to box height, or 21px */
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    max-width: 149px;
+    max-height: 45px;
+    color: #1D1D1F;
+    padding: 12px;
+    background: #FFFFFF;
+    border-radius: 4px;
+}
+.main_form_wrapper{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_form_input{
+    display: flex;
+}
+.main_form_wrapper_title{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+
+    color: #1D1D1F;
+}
+.main_form_wrapper_descr{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+
+    /* identical to box height */
+    text-align: center;
+
+    color: #1D1D1F;
+}
+.form_input{
+    padding: 8px;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+}
+.form_submit{
+    padding: 8px;
+    background: #1D1D1F;
+    border-radius: 4px;
+    text-align: center;
+    color:#FFFFFF;;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+}
+.link_img{
+    background-image: url("img/linkedin.png");
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+.header_main_descr_wrapper:nth-of-type(2){
+    background-color:#E5E5E5
 }
