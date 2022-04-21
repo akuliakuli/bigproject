@@ -5,7 +5,15 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Big Project</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+/>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
 </head>
 <body>
 <header>
@@ -57,14 +65,13 @@
 <div class ="header_slider_container">
             <div class ="header_slider_buttons_wrapper">
                     <div class ="header_slider_buttons">
-                        <button class ="review_button active"></button>
-                        <button class ="review_button"></button>
+                        <button class ="review_button "></button>
                         <button class ="review_button"></button>
                         <button class ="review_button"></button>
                     </div>
                     <div class="header_slider_button_arrow">
-                        <button class="arrow_button"><</button>
-                        <button class="arrow_button">></button>
+                        <button class="arrow_button left"><</button>
+                        <button class="arrow_button right">></button>
                     </div>
             </div>
     <div class ="header_slider_info">
@@ -76,7 +83,7 @@
             <button class ="head_button">Shop Now</button>
         </div>
         <div class ="header_slider_wrapper">
-            <div class ="header_slider_first">
+            <div class ="header_slider_first header_slider">
                 <div class = "header_slider_item">
                     <h1 class ="header_slider_info_title">Free Standing</h1>
                     <p class ="header_slider_info_descr">Single Sink</p>
@@ -86,7 +93,7 @@
                     </div>
                 </div>
             </div>
-            <div class ="header_slider_second main">
+            <div class ="header_slider_second main header_slider">
                 <div class = "header_slider_item">
                     <h1 class ="header_slider_info_title">Free Standing</h1>
                     <p class ="header_slider_info_descr">Single Sink</p>
@@ -96,7 +103,7 @@
                         </div>
                 </div>
             </div>
-            <div class ="header_slider_third">
+            <div class ="header_slider_third header_slider">
                 <div class = "header_slider_item">
                     <h1 class ="header_slider_info_title">Free Standing</h1>
                     <p class ="header_slider_info_descr">Single Sink</p>
@@ -263,10 +270,10 @@
             <input class ="form_submit" type ="submit" value="Subscribe">
         </form>
         <div class ="main_form_links">
-            <a href ="https://www.linkedin.com/feed/" class ="link_img" target ="_blank"></a>
-            <a href ="https://www.linkedin.com/feed/" class ="link_img" target ="_blank"></a>
-            <a href ="https://www.linkedin.com/feed/" class ="link_img" target ="_blank"></a>
-            <a href ="https://www.linkedin.com/feed/" class ="link_img" target ="_blank"></a>
+            <button class ="link_img"><a href ="https://www.linkedin.com/feed/"  target ="_blank"></a></button>
+            <button class ="link_img"><a href ="https://www.linkedin.com/feed/"  target ="_blank"></a></button>
+            <button class ="link_img"><a href ="https://www.linkedin.com/feed/"  target ="_blank"></a></button>
+            <button class ="link_img"><a href ="https://www.linkedin.com/feed/"  target ="_blank"></a></button>
         </div>
 </div>
 <div class ="header_main_descr_wrapper">
@@ -291,6 +298,58 @@
         <p class ="header_main_descr">877-788-8444</p>
     </div>
 </div>
+<footer>
+    <div class ="footer_info">
+        <img class ="footer_info_img" src ="img/Mask group.png">
+        <div class ="footer_info_text">
+            <p class ="footer_info_title">Customer Service</p>
+            <a class ="footer_info_links">Shipping And Delivery</a>
+            <a class ="footer_info_links">Warranty</a>
+            <a class ="footer_info_links">Returns</a>
+            <a class ="footer_info_links">Privacy Policy</a>
+            <a class ="footer_info_links">FAQs</a>
+        </div>
+        <div class ="footer_info_text">
+            <p class ="footer_info_title">Menu</p>
+            <a class ="footer_info_links">Home</a>
+            <a class ="footer_info_links">Shop</a>
+            <a class ="footer_info_links">Quality</a>
+        </div>
+        <div class ="footer_info_text">
+            <p class ="footer_info_title">Contact</p>
+            <a class ="footer_info_links">Showroom</a>
+            <a class ="footer_info_links">Contacts</a>
+            <a class ="footer_info_links">About Us</a>
+        </div>
+        <div class ="footer_info_img">
+            <a href = "https://twitter.com/home"class ="footer_twitter"></a>
+            <a href = "https://twitter.com/home"class ="footer_twitter"></a>
+            <a href = "https://twitter.com/home"class ="footer_twitter"></a>
+            <a href = "https://twitter.com/home"class ="footer_twitter"></a>
+        </div>
+        <img src ="img/Rectangle 82(1).png" alt ="map" class ="footer_map_img">
+    </div>
+</footer>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+var swiper = new Swiper(".header_slider_", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    centeredSlides: true,
+    pagination: {
+      el: ".review_button",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".right",
+      prevEl: ".left",
+    },
+  });
+</script>
+</script>
     <script defer src = "script.js"></script>
 </body>
 </html>
