@@ -1,6 +1,6 @@
 
     function addSlide(slides,prev,next,reviewbtn,...classes){
-        let slide = document.querySelectorAll(slides),
+        let sliders = document.querySelectorAll(slides),
             prevbtn = document.querySelector(prev),
             nextbtn = document.querySelector(next),
             reviewbtns = document.querySelectorAll(reviewbtn);
@@ -11,14 +11,14 @@
         showSlide(slideIndex)
 
         function showSlide(n){
-            if(n > slide.length){
+            if(n > sliders.length){
                 slideIndex = 1
             }
             if(n < 1){
-                slideIndex = slide.length;
+                slideIndex = sliders.length;
             }
-            slide.forEach(item => item.classList.remove(classes[0]))
-            slide[slideIndex - 1].classList.add(classes[0]);
+            sliders.forEach(item => item.classList.remove(classes[0]));
+            sliders[slideIndex - 1].classList.add(classes[0]);
 
             reviewbtns.forEach(item => item.classList.remove(classes[1]))
             reviewbtns[slideIndex - 1].classList.add(classes[1])
