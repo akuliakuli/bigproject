@@ -7,17 +7,12 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta
     name="viewport"
-    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
-/>
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper/swiper-bundle.min.css"
-  />
 </head>
 <body>
 <header>
-        <div class ="header_top_bar">
+        <div class ="header_top_bar " id ="header_top_bar">
                 <ul class ="header_top_menu">
                         <li class ="header_top_menu_item">California Proposition 65</li>
                         <li class ="header_top_menu_item">Privacy policy</li>
@@ -65,9 +60,9 @@
 <div class ="header_slider_container">
             <div class ="header_slider_buttons_wrapper">
                     <div class ="header_slider_buttons">
-                        <button class ="review_button "></button>
-                        <button class ="review_button"></button>
-                        <button class ="review_button"></button>
+                        <button class ="review_button header_slider_button"></button>
+                        <button class ="review_button header_slider_button"></button>
+                        <button class ="review_button header_slider_button"></button>
                     </div>
                     <div class="header_slider_button_arrow">
                         <button class="arrow_button left"><</button>
@@ -176,51 +171,63 @@
                         <div class ="main_top_bar_section">
                                         <h1>Reviews</h1>
                                     <div>
-                                        <button class="arrow_button"><</button>
-                                        <button class="arrow_button">></button>
+                                        <button class="arrow_button arrow_left"><</button>
+                                        <button class="arrow_button arrow_right">></button>
                                     </div>
-                        </div>
-                        <div class ="main_reviews_buttons">
-                            <button class ="review_button active"></button>
-                            <button class ="review_button"></button>
-                            <button class ="review_button"></button>
-                            <button class ="review_button"></button>
+                                    <div class ="header_slider_buttons">
+                                        <button class ="review_button slider_main_button"></button>
+                                        <button class ="review_button slider_main_button"></button>
+                                        <button class ="review_button slider_main_button"></button>
+                                    </div>
                         </div>
             </div>
             <div class ="reviews_container">
+                <div class ="reviews_container_wrapper">
+                                        <div class ="reviews_item_box">
+                                            <div class ="reviews_item_top">
+                                                <img class ="reviews_item_img" src ="img/Ellipse 6.png">
+                                                                    <div class ="reviews_item_box_descr">
+                                                                    <img>
+                                                                    <p class ="reviews_item_box_name">Frank Zimmerman</p>
+                                                                    </div>
+                                                                    <p class ="reviews_item_box_date">Jan 27, 2022</p>
+                                                                    </div>
+                                                        <p class ="reviews_item_descr">Meliore persecuti et Ich bin ein Berliner Te oratio utamur vix. Exerci Kirschkerne eu per. Principes complectitur eos genau His illud moderatius ut, at Freude schöner Götterfunken omnis minim epicurei, natum feugait Schnaps ei. Sea purto singulis te</p>
+                            </div>
                             <div class ="reviews_item_box">
-                                    <div class ="reviews_item_top">
-                                        <img class ="reviews_item_img" src ="img/Ellipse 6.png">
-                                                    <div class ="reviews_item_box_descr">
-                                                                <img>
-                                                                <p class ="reviews_item_box_name">Frank Zimmerman</p>
-                                                            </div>
-                                                    <p class ="reviews_item_box_date">Jan 27, 2022</p>
-                                                </div>
-                                        <p class ="reviews_item_descr">Meliore persecuti et Ich bin ein Berliner Te oratio utamur vix. Exerci Kirschkerne eu per. Principes complectitur eos genau His illud moderatius ut, at Freude schöner Götterfunken omnis minim epicurei, natum feugait Schnaps ei. Sea purto singulis te</p>
+                                <div class ="reviews_item_top">
+                                    <img class ="reviews_item_img" src ="img/Ellipse 6.png">
+                                                        <div class ="reviews_item_box_descr">
+                                                        <img>
+                                                        <p class ="reviews_item_box_name">Frank Zimmerman</p>
+                                                        </div>
+                                                        <p class ="reviews_item_box_date">Jan 27, 2022</p>
+                                                        </div>
+                                            <p class ="reviews_item_descr">Meliore persecuti et Ich bin ein Berliner Te oratio utamur vix. Exerci Kirschkerne eu per. Principes complectitur eos genau His illud moderatius ut, at Freude schöner Götterfunken omnis minim epicurei, natum feugait Schnaps ei. Sea purto singulis te</p>
+                </div>
+                                                <div class ="reviews_item_box">
+                                                    <div class ="reviews_item_top">
+                                                        <img class ="reviews_item_img" src ="img/Ellipse 6.png">
+                                                                            <div class ="reviews_item_box_descr">
+                                                                            <img>
+                                                                            <p class ="reviews_item_box_name">Frank Zimmerman</p>
+                                                                            </div>
+                                                                            <p class ="reviews_item_box_date">Jan 27, 2022</p>
+                                                                            </div>
+                                                                <p class ="reviews_item_descr">Meliore persecuti et Ich bin ein Berliner Te oratio utamur vix. Exerci Kirschkerne eu per. Principes complectitur eos genau His illud moderatius ut, at Freude schöner Götterfunken omnis minim epicurei, natum feugait Schnaps ei. Sea purto singulis te</p>
                                     </div>
                                     <div class ="reviews_item_box">
                                         <div class ="reviews_item_top">
-                                                <img class ="reviews_item_img" src ="img/Ellipse 6.png">
-                                                <div class ="reviews_item_box_descr">
+                                            <img class ="reviews_item_img" src ="img/Ellipse 6.png">
+                                                                <div class ="reviews_item_box_descr">
                                                                 <img>
                                                                 <p class ="reviews_item_box_name">Frank Zimmerman</p>
-                                            </div>
-                                        <p class ="reviews_item_box_date">Jan 27, 2022</p>
-                                        </div>
-                                        <p class ="reviews_item_descr">Meliore persecuti et Ich bin ein Berliner Te oratio utamur vix. Exerci Kirschkerne eu per. Principes complectitur eos genau His illud moderatius ut, at Freude schöner Götterfunken omnis minim epicurei, natum feugait Schnaps ei. Sea purto singulis te</p>
-                                    </div>
-                <div class ="reviews_item_box">
-                    <div class ="reviews_item_top">
-                                <img class ="reviews_item_img" src ="img/Ellipse 6.png">
-                                <div class ="reviews_item_box_descr">
-                                            <img>
-                                            <p class ="reviews_item_box_name">Frank Zimmerman</p>
-                            </div>
-                            <p class ="reviews_item_box_date">Jan 27, 2022</p>
-                        </div>
-                        <p class ="reviews_item_descr">Meliore persecuti et Ich bin ein Berliner Te oratio utamur vix. Exerci Kirschkerne eu per. Principes complectitur eos genau His illud moderatius ut, at Freude schöner Götterfunken omnis minim epicurei, natum feugait Schnaps ei. Sea purto singulis te</p>
-                </div>
+                                                                </div>
+                                                                <p class ="reviews_item_box_date">Jan 27, 2022</p>
+                                                                </div>
+                                                    <p class ="reviews_item_descr">Meliore persecuti et Ich bin ein Berliner Te oratio utamur vix. Exerci Kirschkerne eu per. Principes complectitur eos genau His illud moderatius ut, at Freude schöner Götterfunken omnis minim epicurei, natum feugait Schnaps ei. Sea purto singulis te</p>
+                                </div>      
+        </div>
     </div>
     <div class ="main_products_container">
         <h1 class ="main_products_title">Best seller products</h1>
@@ -297,6 +304,9 @@
         <h1 class ="header_main_title">TELEPHONE NUMBER</h1>
         <p class ="header_main_descr">877-788-8444</p>
     </div>
+    <div class ="header_main_anchor">
+        <a href ="#header_top_bar" class ="header_anchor">^</a>
+    </div>
 </div>
 <footer>
     <div class ="footer_info">
@@ -330,26 +340,6 @@
         <img src ="img/Rectangle 82(1).png" alt ="map" class ="footer_map_img">
     </div>
 </footer>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-<!-- Initialize Swiper -->
-<script>
-var swiper = new Swiper(".header_slider_", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    loop: true,
-    centeredSlides: true,
-    pagination: {
-      el: ".review_button",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".right",
-      prevEl: ".left",
-    },
-  });
-</script>
-</script>
     <script defer src = "script.js"></script>
 </body>
 </html>

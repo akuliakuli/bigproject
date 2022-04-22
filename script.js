@@ -1,39 +1,47 @@
-let slides = document.querySelectorAll(".header_slider"),
-    prev = document.querySelector(".left"),
-    next = document.querySelector(".right")
-    buttons = document.querySelectorAll(".review_button");
 
-    let slideIndex = 1;
+    function addSlide(slides,prev,next,reviewbtn,...classes){
+        let slide = document.querySelectorAll(slides),
+            prevbtn = document.querySelector(prev),
+            nextbtn = document.querySelector(next),
+            reviewbtns = document.querySelectorAll(reviewbtn);
 
-    showSlides(slideIndex);
+        let slideIndex = 1;
+        console.log(classes[0])
+        console.log(classes[1])
+        showSlide(slideIndex)
 
-    function showSlides(n) {
-        if (n > slides.length) {
-            slideIndex = 1;
+        function showSlide(n){
+            if(n > slide.length){
+                slideIndex = 1
+            }
+            if(n < 1){
+                slideIndex = slide.length;
+            }
+            slide.forEach(item => item.classList.remove(classes[0]))
+            slide[slideIndex - 1].classList.add(classes[0]);
+
+            reviewbtns.forEach(item => item.classList.remove(classes[1]))
+            reviewbtns[slideIndex - 1].classList.add(classes[1])
+            
         }
-        if (n < 1) {
-            slideIndex = slides.length;
+        function plusSlides(n){
+            showSlide(slideIndex += n)
         }
 
-        slides.forEach(item => item.classList.remove("main"));
-        slides[slideIndex - 1].classList.add("main")
-        buttons.forEach(item => item.classList.remove("active"));
-        buttons[slideIndex - 1].classList.add("active");
-      
-    }
-  
-    function plusSlides (n) {
-        showSlides(slideIndex += n);
-    }
-    buttons.forEach(item => {
-        item.addEventListener("click",() => {
-            plusSlides(1)
+        reviewbtns.forEach(item => {
+            item.addEventListener("click",() => {
+                plusSlides(1)
+            })
         })
-    })
-    prev.addEventListener('click', function(){
-        plusSlides(-1);
-    });
+        prevbtn.addEventListener('click', function(){
+            plusSlides(-1);
+        });
+    
+        nextbtn.addEventListener('click', function(){
+            plusSlides(1);
+        });
+        
+    }
+    addSlide(".header_slider",".left", ".right", ".header_slider_button", "main", "active")
 
-    next.addEventListener('click', function(){
-        plusSlides(1);
-    });
+
